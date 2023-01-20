@@ -1,4 +1,4 @@
-﻿#Jan-Martti Olop
+#Jan-Martti Olop
 #KT 04
 #01.19.2023                                                          
 #-----------------------------------------------------------# 
@@ -29,8 +29,8 @@ $rows = $xml.customers.customer
 
 foreach ($row in $rows)
 {
-    $pask = $row.full_name
-    New-Item $dir\customers\$pask -ItemType Directory
-    new-item $dir\customers\$pask\$pask.txt
-    $row >> $dir\customers\$pask\$pask.txt
+    $tnimi = $row.full_name
+    New-Item $dir\customers\$tnimi -ItemType Directory
+    new-item $dir\customers\$tnimi\$tnimi.txt
+    $row >> $dir\customers\$tnimi\$tnimi.txt
 }
